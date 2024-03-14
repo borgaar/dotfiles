@@ -1,0 +1,19 @@
+alias cass='mosh borgar@cassarossa.samfundet.no'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias mkdesktop='sudo cp /home/borgar/resources/template.desktop'
+alias thorium='~/applications/thorium.AppImage'
+alias dm='$HOME/.scripts/dev-mode.sh'
+alias ssh-load='ssh-add $HOME/.ssh/samf $HOME/.ssh/gitlab $HOME/.ssh/github'
+alias less='less -R'
+alias less='less -R'
+alias st='speedtest-cli --secure'
+alias config='git --work-tree=$HOME --git-dir=$HOME/.dotfiles'
+
+help() {
+    $HOME/applications/cht.sh "$@" | less
+}
+
+calc() {
+  echo $1 | bc -l
+}
+
