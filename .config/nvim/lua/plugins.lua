@@ -62,5 +62,8 @@ require("flutter-tools").setup {
 }
 
 
--- Set up Flutter/Dart LSP
+-- Set up NvimTree
+require("nvim-tree").setup()
+
+require('keybinds')
 
