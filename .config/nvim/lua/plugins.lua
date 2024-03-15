@@ -39,25 +39,28 @@ require('packer').startup(function()
     end
   })
 
+  -- nvim-tree
+  use 'nvim-tree/nvim-tree.lua'
+
   -- Java completions
   use 'mfussenegger/nvim-jdtls'
 
 end)
 
--- Set up flutter tools
-require("flutter-tools").setup {} -- use defaults
 
--- Set up Flutter/Dart LSP
-require'lspconfig'.dartls.setup{
-  cmd = {
-    "dart", 
-    "/home/borgar/snap/flutter/common/flutter/bin/cache/dart-sdk/bin/snapshots/analysis_server.dart.snapshot", 
-    "--lsp"
+-- init flutter-tools
+require("flutter-tools").setup {
+  widget_guides = {
+    enabled = true,
   },
-  root_dir = function(fname)
-    return require'lspconfig'.util.find_git_ancestor(fname) or require'lspconfig'.util.find_files(".dart_tool/package_config.json")
-  end,
+  lsp = {
+    color = { -- show the derived colours for dart variables
+      enabled = true, -- whether or not to highlight color variables at all, only supported on flutter >= 2.10
+      background = true,
+    }
+  }
 }
 
-require'nvim-surround'.setup()
+
+-- Set up Flutter/Dart LSP
 
