@@ -39,9 +39,17 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/home/borgar/.sdk/jdk-17.0.10+7",
+      "default": true
+    }
+  ],
   "files.autoSave": "afterDelay",
   "rewrap.autoWrap.enabled": true,
   "rewrap.wrappingColumn": 80,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "debug.openDebug": "neverOpen"
+  "debug.openDebug": "neverOpen",
+  "explorer.confirmDragAndDrop": false
 }

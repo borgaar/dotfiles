@@ -45,6 +45,14 @@ require('packer').startup(function()
   -- Java completions
   use 'mfussenegger/nvim-jdtls'
 
+  -- Snippet engine
+  use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp"
+  })
 end)
 
 
@@ -67,3 +75,5 @@ require("nvim-tree").setup()
 
 require('keybinds')
 
+-- Setup snippets
+require("luasnip.loaders.from_vscode").lazy_load()
