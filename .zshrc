@@ -138,7 +138,6 @@ bindkey -v
 # Create aliases
 source $HOME/.aliases
 
-
 # Set nvim to the default text editor
 export EDITOR='nvim'
 
@@ -163,4 +162,5 @@ autopair-init
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
-
+# Set JAVA_HOME
+export JAVA_HOME="/home/borgar/.sdk/jdk-17.0.10+7/bin"
