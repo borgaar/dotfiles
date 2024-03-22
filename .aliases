@@ -17,3 +17,6 @@ calc() {
   echo $1 | bc -l
 }
 
+encrypt() {
+  tar -cvf encrypted.tar $1 && xz -9 encrypted.tar && gpg --symmetric encrypted.tar.xz
+}
