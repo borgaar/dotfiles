@@ -6,7 +6,11 @@ alias ssh-load='ssh-add $HOME/.ssh/samf $HOME/.ssh/gitlab $HOME/.ssh/github'
 alias less='less -R'
 alias less='less -R'
 alias st='speedtest-cli --secure'
-alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME/.dotfiles'
+
+dotfiles() {
+  (cd $HOME/.dotfiles && git --git-dir=$HOME/.dotfiles --work-tree=$HOME/.dotfiles $@)
+}
+
 
 help() {
     $HOME/applications/cht.sh "$@" | less
