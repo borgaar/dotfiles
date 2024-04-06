@@ -1,0 +1,21 @@
+alias cass='mosh borgar@cassarossa.samfundet.no'
+alias mkdesktop='sudo cp /home/borgar/resources/template.desktop'
+alias thorium='~/applications/thorium.AppImage'
+alias dm='$HOME/.scripts/dev-mode.sh'
+alias ssh-load='ssh-add $HOME/.ssh/samf $HOME/.ssh/gitlab $HOME/.ssh/github'
+alias less='less -R'
+alias less='less -R'
+alias st='speedtest-cli --secure'
+alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+help() {
+    $HOME/applications/cht.sh "$@" | less
+}
+
+calc() {
+  echo $1 | bc -l
+}
+
+encrypt() {
+  tar -cvf encrypted.tar $1 && xz -9 encrypted.tar && gpg --symmetric encrypted.tar.xz
+}

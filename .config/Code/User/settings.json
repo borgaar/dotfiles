@@ -1,0 +1,55 @@
+{
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "redhat.telemetry.enabled": false,
+  "maven.terminal.useJavaHome": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "git.autofetch": true,
+  "editor.fontFamily": "'FiraCode Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always"
+    }
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "dart.previewFlutterUiGuides": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontSize": 15,
+  "editor.lineNumbers": "relative",
+  "keyboard.dispatch": "keyCode",
+  "liveshare.notebooks.allowGuestExecuteCells": true,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "editor.foldingStrategy": "indentation",
+  "editor.wrappingIndent": "deepIndent",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/home/borgar/.sdk/jdk-17.0.10+7",
+      "default": true
+    }
+  ],
+  "files.autoSave": "afterDelay",
+  "rewrap.autoWrap.enabled": true,
+  "rewrap.wrappingColumn": 80,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "debug.openDebug": "neverOpen",
+  "explorer.confirmDragAndDrop": false
+}
