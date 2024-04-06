@@ -15,6 +15,7 @@ paths=(
 	".config/figma-linux/Themes/Catppuchin_Mocha.json"
 	".config/htop/htoprc"
 	".config/tmux/tmux.conf"
+	".p10k"
 )
 
 # Install yay
