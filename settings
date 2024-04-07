@@ -1,0 +1,26 @@
+# Pacman packages to install, separated by space
+packages="zsh eza wl-clipboard zoxide tree"
+
+
+# AUR packages to install, separated by space
+aur=""
+
+# Install yay? (true/false)
+install_yay=true
+
+# Configs to distribute (path is relative to $HOME/.dotfiles)
+paths=(
+	".aliases"
+	".gitconfig"
+	".zshrc"
+	".config/Code/User/keybinds.json"
+	".config/Code/User/settings.json"
+	".config/alacritty/alacritty.toml"
+	".config/alacritty/catppuccin-mocha.toml"
+	".config/figma-linux/settings.json"
+	".config/figma-linux/Themes/Catppuchin_Mocha.json"
+	".config/htop/htoprc"
+	".config/tmux/tmux.conf"
+	".p10k"
+)
+
