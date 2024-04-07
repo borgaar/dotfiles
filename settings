@@ -8,7 +8,7 @@ aur=""
 # Install yay? (true/false)
 install_yay=true
 
-# Configs to distribute (path is relative to $HOME/.dotfiles)
+# Configs to distribute (path is relative to $HOME)
 paths=(
 	".aliases"
 	".gitconfig"
