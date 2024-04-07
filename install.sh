@@ -116,7 +116,7 @@ for path in "${paths[@]}"; do
 
     # Create a symbolic link, forcing the link to be created if it already exists
     ln -sf "$HOME/.dotfiles/$path" "$target"
-    echo "Created link to $HOME/$path"
+    echo "Created link from $HOME/.dotfiles/$path to $HOME/$path"
 done
 
 cd -
