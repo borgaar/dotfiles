@@ -157,7 +157,7 @@ autopair-init
 
 
 # Set JAVA_HOME
-export JAVA_HOME="$HOME/.sdk/jdk-17.0.10+7/bin"
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk/bin"
 
 source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
 
