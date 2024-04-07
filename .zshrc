@@ -141,11 +141,12 @@ export EDITOR='nvim'
 eval "$(zoxide init --cmd cd zsh)"
 
 # Pass SSH-handling over to gpg-agent
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent
-
-PATH=$PATH:/home/borgar/.local/bin
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Autopair in terminal
 if [[ ! -d ~/.zsh-autopair ]]; then
@@ -154,9 +155,6 @@ fi
 source ~/.zsh-autopair/autopair.zsh
 autopair-init
 
-# Set GPG_TTY variable to the current terminal (used for GPG/SSH)
-export GPG_TTY=$(tty)
-gpg-connect-agent updatestartuptty /bye >/dev/null
 
 # Set JAVA_HOME
 export JAVA_HOME="$HOME/.sdk/jdk-17.0.10+7/bin"
