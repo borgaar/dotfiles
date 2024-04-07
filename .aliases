@@ -7,6 +7,7 @@ alias less='less -R'
 alias less='less -R'
 alias st='speedtest-cli --secure'
 alias server-local="mosh $USER@192.168.39.99"
+alias ls='eza -1labgh --icons=always --hyperlink --group-directories-first'
 
 dotfiles() {
   (cd $HOME/.dotfiles && git --git-dir=$HOME/.dotfiles --work-tree=$HOME/.dotfiles $@)
