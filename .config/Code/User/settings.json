@@ -18,7 +18,7 @@
     }
   },
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false
@@ -42,7 +42,7 @@
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-17",
-      "path": "/home/borgar/.sdk/jdk-17.0.10+7",
+      "path": "/usr/lib/jvm/java-21-openjdk",
       "default": true
     }
   ],
