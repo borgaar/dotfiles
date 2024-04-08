@@ -1,6 +1,5 @@
 # Pacman packages to install, separated by space
-packages="zsh eza wl-clipboard zoxide tree"
-
+packages="zsh eza wl-clipboard ntfs-3g zoxide tree jdk21-openjdk"
 
 # AUR packages to install, separated by space
 aur=""
