@@ -158,6 +158,7 @@ autopair-init
 
 # Set JAVA_HOME
 export JAVA_HOME="/usr/lib/jvm/java-21-openjdk"
+export PATH=$PATH:/usr/lib/jvm/java-21-openjdk/bin
 
 source $HOME/.powerlevel10k/powerlevel10k.zsh-theme
 
